@@ -11,7 +11,11 @@
 
 // scanf tem pelo menos dois parametros
 // primeiro parametro: o tipo de variavel da leitura
-// %d - inteiro %f - float %lf - double %c - char %s - string
+// %d - inteiro 
+// %f - float
+// %lf - double 
+// %c - char
+// %s - string
 // Segundo parametro - o enderecos das variaveis de leitura comecando atraves do &
 
 int main(){
