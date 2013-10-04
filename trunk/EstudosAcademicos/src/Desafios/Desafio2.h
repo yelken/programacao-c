@@ -17,7 +17,8 @@ typedef enum operacoes operacao;
 bool isNumeroPalindrome(int numero) {
 	int auxiliar, reverso;
 	bool retorno = false;
-
+	
+	// DÚVIDA REFERENTE AO LENGTH DO INTEGER
 	//if (sizeof(numero) < 8) {
 	//		printf("Digite um número com 8 digitos, exemplo: 12345678");
 	//} else {
@@ -41,13 +42,18 @@ int operacaoNumeros(int numero, operacao paramOp) {
 	int auxiliar, reverso, retorno;
 
 	auxiliar = numero;
-	
-	if (paramOp == soma) {
+
+	switch (paramOp) {
+	case soma:
 		retorno = 0;
-	} else {
+		break;
+	case produto:
 		retorno = 1;
+		break;
+	default:
+		break;
 	}
-	
+
 	reverso = 0;
 
 	while (auxiliar != 0) {
